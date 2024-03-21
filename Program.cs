@@ -43,5 +43,8 @@
                 string respuesta = Console.ReadLine().ToLower();
                 calcAgain = respuesta == "s";
             }
+            Console.WriteLine("Gracias por usar este programa!!!");
+
+        }
     }
 }
