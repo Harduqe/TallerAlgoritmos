@@ -16,10 +16,10 @@
 
             while (calcAgain)
             {
-                Console.Write("Ingrese los datos del paciente: ");
-                Console.Write("Ingrese el peso en kg: ");
+                Console.WriteLine("Ingrese los datos del paciente: ");
+                Console.WriteLine("Ingrese el peso en kg: ");
                 double peso = Convert.ToDouble(Console.ReadLine());
-                Console.Write("Ingrese la altura en metros: ");
+                Console.WriteLine("Ingrese la altura en metros: ");
                 double altura = Convert.ToDouble(Console.ReadLine());
 
                 double imc = peso / (altura * altura);
@@ -34,12 +34,12 @@
                 else
                     categoria = "Obesidad";
 
-                Console.Write($"El IMC del paciente es: {imc:F2}");
+                Console.WriteLine($"El IMC del paciente es: {imc:F2}");
                 Console.Write($"Categoría: {categoria}");
 
 
 
-                Console.Write("\n¿Quieres calcular el IMC de otro paciente? (s/n)");
+                Console.WriteLine("\n¿Quieres calcular el IMC de otro paciente? (s/n)");
                 string respuesta = Console.ReadLine().ToLower();
                 calcAgain = respuesta == "s";
             }
